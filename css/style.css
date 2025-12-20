@@ -1,0 +1,272 @@
+:root {
+  --cream: #F9D7B0;
+  --mint: #A8C686;
+  --pink: #FF9E9E;
+  --bg: #FFFDF9;
+  --text: #333333;
+  --light-text: #555555;
+  --card-bg: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px dashed #e0d5c5;
+}
+
+header h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.2rem;
+  color: var(--mint);
+  margin-bottom: 15px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav a:hover, nav a:focus {
+  background: var(--cream);
+  color: var(--text);
+}
+
+/* Cards */
+.card {
+  display: block;
+  width: 220px;
+  margin: 15px auto;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #f0e8dd;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  background: var(--cream);
+}
+
+.card h2 {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 8px;
+  color: var(--mint);
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--mint);
+  text-decoration: none;
+  font-weight: 600;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Pets Page */
+.pet-profile {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  border-left: 4px solid var(--pink);
+}
+
+.pet-profile img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 12px 0;
+}
+
+.diary {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.diary li {
+  margin-bottom: 12px;
+  color: var(--light-text);
+}
+
+.diary a {
+  color: var(--mint);
+  text-decoration: underline;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* Adoption List */
+.notice {
+  text-align: center;
+  background: #fff8f0;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.adopt-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.adopt-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.adopt-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  width: 250px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.adopt-card:hover {
+  transform: translateY(-4px);
+}
+
+.adopt-card img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background: #f9f5f0;
+  border-radius: 16px;
+}
+
+.contact-info a {
+  color: var(--mint);
+  text-decoration: underline;
+}
+
+.warning {
+  color: #d9534f;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Adoption Detail */
+.detail-list {
+  background: #faf8f4;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+  list-style: none;
+}
+.detail-list li {
+  margin-bottom: 8px;
+}
+.story, .contact-box {
+  margin: 25px 0;
+  padding: 15px;
+  background: #fcfaf6;
+  border-radius: 12px;
+}
+.contact-box h3 {
+  color: var(--pink);
+}
+
+/* Contact Page */
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.interests li {
+  background: var(--cream);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  color: var(--light-text);
+  font-size: 0.95rem;
+  border-top: 1px solid #eee8dd;
+}
+
+/* Inline styles */
+.pet-name {
+  color: var(--pink);
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .card {
+    width: 90%;
+  }
+  .adopt-card {
+    width: 100%;
+  }
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
